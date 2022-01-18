@@ -37,9 +37,6 @@
                                 </svg>
                             </span>
                             <input id="nome-completo" type="text" class="form-control" onblur="validateCompleteNameInput()" onkeyup="validateCompleteNameInput()" placeholder="Sam Mithz Von Heiheinhz" required>
-                            <div class="invalid-feedback">
-                                É obrigatório preencher o campo nome completo com letra maiúscula no início de cada palavra.
-                            </div>
                         </div>
                     </div>
                     <!-- CPF Input -->
@@ -61,9 +58,6 @@
                                 </svg>
                             </span>
                             <input id="CPF" type="text" class="form-control" onblur="validateCPFInput()" onkeyup="validateCPFInput()" placeholder="021.791.602-01" required>
-                            <div class="invalid-feedback">
-                                Digite o seu CPF.
-                            </div>
                         </div>
                     </div>
                     <!-- E-mail Input -->
@@ -77,9 +71,6 @@
                                 </svg>
                             </span>
                             <input id='email' type="text" class="form-control" onblur="validateEmailInput()" onkeyup="validateEmailInput()" placeholder="HeiheinhzVMithz@outlook.com" required>
-                            <div class="invalid-feedback">
-                                Digite seu endereço de e-mail pessoal.
-                            </div>
                         </div>
                     </div>
                     <!-- Smartphone Number Contact Input -->
@@ -94,9 +85,6 @@
                                 </svg>
                             </span>
                             <input id="telefone-celular" type="text" class="form-control" onblur="validateSmartphoneNumberContactInput()" onkeyup="validateSmartphoneNumberContactInput()" placeholder="+55 (41) 9 8651-7047" required>
-                            <div class="invalid-feedback">
-                                É necessário o seu número de celular para primeira opção de contato!
-                            </div>
                         </div>
                     </div>
                     <!-- Telephone Number Contact Input -->
@@ -110,9 +98,6 @@
                                 </svg>
                             </span>
                             <input id="telefone-fixo" type="text" class="form-control" onblur="validateTelephoneNumberContactInput()" onkeyup="validateTelephoneNumberContactInput()" placeholder="+55 (41) 4321-6080" required>
-                            <div class="invalid-feedback">
-                                Digite o número do telefone-fixo para uma segunda opção de contato!
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -133,18 +118,12 @@
                                 </svg>
                             </span>
                             <input id="CEP" type="text" class="form-control" onblur="validateCEPInput()" onkeyup="validateCEPInput()" placeholder="80035-030" required>
-                            <div class="invalid-feedback">
-                                Digite o seu CEP.
-                            </div>
                         </div>
                     </div>
                     <!-- State Name Input -->
                     <div class="col-3 col-sm-3">
                         <label for="estado" class="form-label">Estado</label>
                         <input id="estado" type="text" class="form-control" onblur="validateStateNameInput()" onkeyup="validateStateNameInput()" placeholder="Paraná" required>
-                        <div class="invalid-feedback">
-                            Digite o nome do Estado.
-                        </div>
                     </div>
                     <!-- City Name Input -->
                     <div class="col-5 col-sm-5">
@@ -159,9 +138,6 @@
                                 </svg>
                             </span>
                             <input id="cidade" type="text" class="form-control" onblur="validateCityNameInput()" onkeyup="validateCityNameInput()" placeholder="Curitiba" required>
-                            <div class="invalid-feedback">
-                                Digite o nome da Cidade.
-                            </div>
                         </div>
                     </div>
                     <!-- District Name Input -->
@@ -175,18 +151,12 @@
                                 </svg>
                             </span>
                             <input id="bairro" type="text" class="form-control" onblur="validateDistrictNameInput()" onkeyup="validateDistrictNameInput()" placeholder="Cabral" required>
-                            <div class="invalid-feedback">
-                                Digite o nome do Bairro.
-                            </div>
                         </div>
                     </div>
                     <!-- Street Name Input -->
                     <div class="col-8 col-sm-8">
                         <label for="rua" class="form-label">Rua</label>
                         <input id="rua" type="text" class="form-control" onblur="validateStreetName()" onkeyup="validateStreetName()" placeholder="R. Dr. Manoel Pedro" required>
-                        <div class="invalid-feedback">
-                            Digite o nome da Rua.
-                        </div>
                     </div>
                     <!-- Residence Number Input -->
                     <div class="col-4 col-sm-4">
@@ -194,9 +164,6 @@
                         <div class="input-group">
                             <span class="input-group-text">Nº</span>
                             <input id='numero' type="text" class="form-control" onblur="validateResidenceNumberInput()" onkeyup="validateResidenceNumberInput()" placeholder="21" required>
-                            <div class="invalid-feedback">
-                                Digite o número da residência.
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -216,27 +183,18 @@
                                         d="M8 .95 14.61 4h.89a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5H15v7a.5.5 0 0 1 .485.379l.5 2A.5.5 0 0 1 15.5 17H.5a.5.5 0 0 1-.485-.621l.5-2A.5.5 0 0 1 1 14V7H.5a.5.5 0 0 1-.5-.5v-2A.5.5 0 0 1 .5 4h.89L8 .95zM3.776 4h8.447L8 2.05 3.776 4zM2 7v7h1V7H2zm2 0v7h2.5V7H4zm3.5 0v7h1V7h-1zm2 0v7H12V7H9.5zM13 7v7h1V7h-1zm2-1V5H1v1h14zm-.39 9H1.39l-.25 1h13.72l-.25-1z" />
                                 </svg>
                             </span>
-                            <input id="nome-do-banco" type="text" class="form-control" placeholder="Inter" required>
-                            <div class="invalid-feedback">
-                                Digite o nome do seu banco.
-                            </div>
+                            <input id="nome-do-banco" type="text" class="form-control" onblur="validateBankName()" onkeyup="validateBankName()" placeholder="Inter" required>
                         </div>
                     </div>
-                    <!-- Code Bank Input -->
+                    <!-- Bank Code Input -->
                     <div class="col-4">
                         <label for="numero-do-banco" class="form-label">Número do banco</label>
-                        <input id="numero-do-banco" type="text" class="form-control" placeholder="077" required>
-                        <div class="invalid-feedback">
-                            Digite o código de identificação do banco.
-                        </div>
+                        <input id="numero-do-banco" type="text" class="form-control" onblur="validateBankCode()" onkeyup="validateBankCode()" placeholder="077" required>
                     </div>
-                    <!-- Code Agency Input -->
+                    <!-- Agency Code Input -->
                     <div class="col-4">
                         <label for="agencia" class="form-label">Agência</label>
-                        <input id="agencia" type="text" class="form-control" placeholder="0001" required>
-                        <div class="invalid-feedback">
-                            Digite a sequência de números da agência.
-                        </div>
+                        <input id="agencia" type="text" class="form-control" onblur="validateAgencyCode()" onkeyup="validateAgencyCode()" placeholder="0001" required>
                     </div>
                     <!-- Checking Account Input -->
                     <div class="col-md-4">
@@ -248,10 +206,7 @@
                                     <path d="M2 5.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-1zm0 3a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 0 1h-1a.5.5 0 0 1-.5-.5zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 0 1h-1a.5.5 0 0 1-.5-.5zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 0 1h-1a.5.5 0 0 1-.5-.5zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 0 1h-1a.5.5 0 0 1-.5-.5z"/>
                                 </svg>
                             </span>
-                            <input id="conta-corrente" type="text" class="form-control" placeholder="1241790-7" required>
-                            <div class="invalid-feedback">
-                                Digite o número da conta-corrente.
-                            </div>
+                            <input id="conta-corrente" type="text" class="form-control" onblur="validateCheckingAccountInput()" onkeyup="validateCheckingAccountInput()" placeholder="1241790-7" required>
                         </div>
                     </div>
                     <!-- Attachment of bank receipt -->
@@ -266,64 +221,10 @@
                     </div>
                 </div>
             </div><br>
-            <!-- Modal Success -->
-            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
-                        <symbol id="check-circle-fill" fill="currentColor" viewBox="0 0 16 16">
-                            <path
-                                d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
-                        </symbol>
-                    </svg>
-                    <div class="alert alert-success alert-dismissible fade show d-flex align-items-center text-center" role="alert">
-                        <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Success:">
-                          <use xlink:href="#check-circle-fill"/>
-                        </svg>
-                            Cadastro efetuado com sucesso!
-                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-                    </div>
-                </div>
-            </div>
-            <!-- Modal Alert -->
-            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
-                        <symbol id="exclamation-triangle-fill" fill="currentColor" viewBox="0 0 16 16">
-                            <path
-                                d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
-                        </symbol>
-                    </svg>
-                    <div class="alert alert-warning alert-dismissible fade show d-flex align-items-center text-center" role="alert">
-                        <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Warning:">
-                            <use xlink:href="#exclamation-triangle-fill"/>
-                        </svg>
-                            Falta preencher alguns campos!
-                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-                    </div>
-                </div>
-            </div>
-            <!-- Modal Error -->
-            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
-                        <symbol id="x-circle-fill" fill="currentColor" viewBox="0 0 16 16">
-                            <path 
-                                d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293 5.354 4.646z"/>
-                        </symbol>
-                    </svg>
-                    <div class="alert alert-danger alert-dismissible fade show d-flex align-items-center text-center" role="alert">
-                        <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Warning:">
-                            <use xlink:href="#x-circle-fill"/>
-                        </svg>
-                            Preencha os campos antes!
-                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-                    </div>
-                </div>
-            </div>
             <!-- Submit Button -->
             <div class="mb-5">
                 <div class="d-grid p-3 col-sm-3 mx-auto">
-                    <button class="btn btn-primary anunciar" type="submit">Cadastrar</button>
+                    <button class="btn btn-primary" id="submit-button" type="submit">Cadastrar</button>
                 </div>
             </div>
         </form>
@@ -332,9 +233,7 @@
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
     <!-- Option 2: Separate Popper and Bootstrap JS -->
     <!--
@@ -358,8 +257,12 @@
 
     </script>
 
+    <script type="text/javascript" src="scripts/event/submit.js"></script>
+
     <script type="text/javascript" src="scripts/lockout/specialCharacter.js"></script>
     <script type="text/javascript" src="scripts/lockout/numChar.js"></script>
+
+    <script type="text/javascript" src="scripts/service/getCEP.js"></script>
 
     <script type="text/javascript" src="scripts/validate/validateForm.js"></script>
     <script type="text/javascript" src="scripts/validate/validateInputs.js"></script>
