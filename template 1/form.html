@@ -25,7 +25,7 @@
             <div class="col-lg-8 mb-4 mx-auto">
                 <!-- Profile Data Area -->
                 <h4 class="mb-4">Dados Pessoais</h4>
-                <div class="row g-4">
+                <div class="row g-4 mb-4">
                     <!-- Complete Name Input -->
                     <div class="col-md-8">
                         <label for="nome-completo" class="form-label">Nome completo</label>
@@ -41,7 +41,7 @@
                     </div>
                     <!-- CPF Input -->
                     <div class="col-md-4">
-                        <label for="CPF" class="form-label">CPF</label>
+                        <label for="CPF-CNPJ" class="form-label">CPF/CNPJ</label>
                         <div class="input-group">
                             <span class="input-group-text">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-fingerprint" viewBox="0 0 16 16">
@@ -57,11 +57,13 @@
                                         d="M4.81 1.37A6.5 6.5 0 0 1 14.56 7a.5.5 0 1 1-1 0 5.5 5.5 0 0 0-8.25-4.765.5.5 0 0 1-.5-.865Zm-.89 1.257a.5.5 0 0 1 .04.706A5.478 5.478 0 0 0 2.56 7a.5.5 0 0 1-1 0c0-1.664.626-3.184 1.655-4.333a.5.5 0 0 1 .706-.04ZM1.915 8.02a.5.5 0 0 1 .346.616l-.779 2.767a.5.5 0 1 1-.962-.27l.778-2.767a.5.5 0 0 1 .617-.346Zm12.15.481a.5.5 0 0 1 .49.51c-.03 1.499-.161 3.025-.727 4.533l-.07.187a.5.5 0 0 1-.936-.351l.07-.187c.506-1.35.634-2.74.663-4.202a.5.5 0 0 1 .51-.49Z" />
                                 </svg>
                             </span>
-                            <input id="CPF" type="text" class="form-control" onblur="validateCPFInput()" onkeyup="validateCPFInput()" placeholder="021.791.602-01" required>
+                            <input id="CPF-CNPJ" type="text" class="form-control" onblur="validateCPFInput()" onkeyup="validateCPFInput()" placeholder="021.791.602-01" required>
                         </div>
                     </div>
+                </div>
+                <div class="row g-4 mb-4">
                     <!-- E-mail Input -->
-                    <div class="col-12">
+                    <div class="col-md-12">
                         <label for="email" class="form-label">E-mail</label>
                         <div class="input-group">
                             <span class="input-group-text">
@@ -73,6 +75,8 @@
                             <input id='email' type="text" class="form-control" onblur="validateEmailInput()" onkeyup="validateEmailInput()" placeholder="HeiheinhzVMithz@outlook.com" required>
                         </div>
                     </div>
+                </div>
+                <div class="row g-4 mb-4">
                     <!-- Smartphone Number Contact Input -->
                     <div class="col-6 col-sm-6">
                         <label for="telefone-celular" class="form-label">Telefone Celular</label>
@@ -106,7 +110,7 @@
             <div class="col-lg-8 mb-4 mx-auto">
                 <!-- Address Data Area -->
                 <h4 class="mb-4">Endereço</h4>
-                <div class="row g-4">
+                <div class="row g-4 mb-4">
                     <!-- CEP Input -->
                     <div class="col-4 col-sm-4">
                         <label for="CEP" class="form-label">CEP</label>
@@ -140,6 +144,8 @@
                             <input id="cidade" type="text" class="form-control" onblur="validateCityNameInput()" onkeyup="validateCityNameInput()" placeholder="Curitiba" required>
                         </div>
                     </div>
+                </div>
+                <div class="row g-4 mb-4">    
                     <!-- District Name Input -->
                     <div class="col-4 col-sm-4">
                         <label for="bairro" class="form-label">Bairro</label>
@@ -158,6 +164,8 @@
                         <label for="rua" class="form-label">Rua</label>
                         <input id="rua" type="text" class="form-control" onblur="validateStreetName()" onkeyup="validateStreetName()" placeholder="R. Dr. Manoel Pedro" required>
                     </div>
+                </div>
+                <div class="row g-4 mb-4">
                     <!-- Residence Number Input -->
                     <div class="col-4 col-sm-4">
                         <label for="numero" class="form-label">Número</label required>
@@ -172,9 +180,9 @@
             <div class="col-lg-8 mb-4 mx-auto">
                 <!-- Bank Data Area -->
                 <h4 class="mb-4">Dados Bancários</h4>
-                <div class="row g-4">
+                <div class="row g-4 mb-4">
                     <!-- Bank Name Input -->
-                    <div class="col-4">
+                    <div class="col-4 col-sm-4">
                         <label for="nome-do-banco" class="form-label">Nome do banco</label>
                         <div class="input-group">
                             <span class="input-group-text">
@@ -187,15 +195,17 @@
                         </div>
                     </div>
                     <!-- Bank Code Input -->
-                    <div class="col-4">
+                    <div class="col-4 col-sm-4">
                         <label for="numero-do-banco" class="form-label">Número do banco</label>
                         <input id="numero-do-banco" type="text" class="form-control" onblur="validateBankCode()" onkeyup="validateBankCode()" placeholder="077" required>
                     </div>
                     <!-- Agency Code Input -->
-                    <div class="col-4">
+                    <div class="col-4 col-sm-4">
                         <label for="agencia" class="form-label">Agência</label>
                         <input id="agencia" type="text" class="form-control" onblur="validateAgencyCode()" onkeyup="validateAgencyCode()" placeholder="0001" required>
                     </div>
+                </div>
+                <div class="row g-4 mb-4">
                     <!-- Checking Account Input -->
                     <div class="col-md-4">
                         <label for="conta-corrente" class="form-label">Conta corrente</label>
@@ -220,7 +230,7 @@
                         </div>
                     </div>
                 </div>
-            </div><br>
+            </div>
             <!-- Submit Button -->
             <div class="mb-5">
                 <div class="d-grid p-3 col-sm-3 mx-auto">
