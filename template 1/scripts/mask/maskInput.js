@@ -1,27 +1,27 @@
 // Máscaras de input
-$("#CPF-CNPJ").keydown(function(){
-    try {
-        $("#CPF-CNPJ").unmask();
-    } catch (e) {}
+$("#CPF-CNPJ").keydown(function () {
+  try {
+    $("#CPF-CNPJ").unmask();
+  } catch (e) {}
 
-    var tamanho = $("#CPF-CNPJ").val().length;
+  var tamanho = $("#CPF-CNPJ").val().length;
 
-    if(tamanho < 11){
-        $("#CPF-CNPJ").mask("999.999.999-99");
-    } else {
-        $("#CPF-CNPJ").mask("99.999.999/9999-99");
-    }
+  if (tamanho < 11) {
+    $("#CPF-CNPJ").mask("999.999.999-99");
+  } else {
+    $("#CPF-CNPJ").mask("99.999.999/9999-99");
+  }
 
-    // ajustando foco
-    var elem = this;
-    setTimeout(function(){
-        // mudo a posição do seletor
-        elem.selectionStart = elem.selectionEnd = 10000;
-    }, 0);
-    // reaplico o valor para mudar o foco
-    var currentValue = $(this).val();
-    $(this).val('');
-    $(this).val(currentValue);
+  // ajustando foco
+  var elem = this;
+  setTimeout(function () {
+    // mudo a posição do seletor
+    elem.selectionStart = elem.selectionEnd = 10000;
+  }, 0);
+  // reaplico o valor para mudar o foco
+  var currentValue = $(this).val();
+  $(this).val("");
+  $(this).val(currentValue);
 });
 
 $("#telefone-celular").mask("+00 (00) 0 0000-0000");
