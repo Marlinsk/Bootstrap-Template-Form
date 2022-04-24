@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Modelo 1 - Protótipo</title>
+  <!-- Favicon Bootstrap-logo -->
+  <link rel="icon" type="image/x-icon" href="../bootstrap-5.1.3/site/static/docs/5.1/assets/brand/bootstrap-logo.svg" />
+  <!-- Bootstrap CSS -->
+  <link href="../bootstrap-5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+</head>
+
+<body class="bg-light bg-gradient">
+  <div class="container">
+    <div class="py-5 text-center">
+      <img class="mb-4 d-block mx-auto" src="../bootstrap-5.1.3/site/static/docs/5.1/assets/brand/bootstrap-logo.svg"
+        alt="Brand" width="161" height="128" />
+      <h2>Formulário Modelo 1</h2>
+      <p class="lead">
+        Modelo de formulário feito utilizando a biblioteca do Bootstrap 5.1.3
+      </p>
+    </div>
+  </div>
+  <div class="container">
+    <form class="mb-5">
+      <div class="col-lg-8 mb-4 mx-auto">
+        <h4 class="mb-4">Dados Pessoais</h4>
+        <div class="row g-4 mb-4">
+          <div class="col-md-5">
+            <label for="nome-completo" class="form-label">Nome completo</label>
+            <div class="input-group">
+              <span class="input-group-text">
+                <img src="../bootstrap-icons/icons/person.svg" alt="person" width="16" height="16" fill="currentColor"
+                  class="bi bi-person">
+              </span>
+              <input id="nome-completo" type="text" class="form-control" placeholder="Sam Mithz Von Heiheinhz" />
+            </div>
+          </div>
+          <div class="col-6 col-sm-3">
+            <label for="string" class="form-label">Data de Nascimento</label>
+            <input type="string" class="form-control" id="data-de-nascimento" placeholder="13/11/1989" />
+          </div>
+          <div class="col-6 col-sm-4">
+            <label for="CPF-CNPJ" class="form-label">CPF/CNPJ</label>
+            <div class="input-group">
+              <span class="input-group-text">
+                <img src="../bootstrap-icons/icons/fingerprint.svg" alt="fingerprint" width="16" height="16"
+                  fill="currentColor" class="bi bi-fingerprint">
+              </span>
+              <input id="CPF-CNPJ" type="text" class="form-control" placeholder="021.791.602-01" />
+            </div>
+          </div>
+        </div>
+        <div class="row g-4 mb-4">
+          <div class="col-md-12">
+            <label for="email" class="form-label">E-mail</label>
+            <div class="input-group">
+              <span class="input-group-text">
+                <img src="../bootstrap-icons/icons/at.svg" alt="at" width="16" height="16" fill="currentColor"
+                  class="bi bi-at">
+              </span>
+              <input id="email" type="text" class="form-control" placeholder="HeiheinhzVMithz@outlook.com" />
+            </div>
+          </div>
+        </div>
+        <div class="row g-4 mb-4">
+          <div class="col-6 col-sm-6">
+            <label for="telefone-celular" class="form-label">Telefone Celular</label>
+            <div class="input-group">
+              <span class="input-group-text">
+                <img src="../bootstrap-icons/icons/phone.svg" alt="phone" width="16" height="16" fill="currentColor"
+                  class="bi bi-phone">
+              </span>
+              <input id="telefone-celular" type="text" class="form-control" placeholder="+55 (41) 9 8651-7047" />
+            </div>
+          </div>
+          <div class="col-6 col-sm-6">
+            <label for="telefone-fixo" class="form-label">Telefone Fixo</label>
+            <div class="input-group">
+              <span class="input-group-text">
+                <img src="../bootstrap-icons/icons/telephone.svg" alt="telephone" width="16" height="16"
+                  fill="currentColor" class="bi bi-telephone">
+              </span>
+              <input id="telefone-fixo" type="text" class="form-control" placeholder="+55 (41) 4321-6080" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr class="col-lg-8 mb-4 mx-auto" />
+      <div class="col-lg-8 mb-4 mx-auto">
+        <h4 class="mb-4">Endereço</h4>
+        <div class="row g-4 mb-4">
+          <div class="col-4 col-sm-4">
+            <label for="CEP" class="form-label">CEP</label>
+            <div class="input-group">
+              <span class="input-group-text">
+                <img src="../bootstrap-icons/icons/mailbox.svg" alt="mailbox" width="16" height="16" fill="currentColor"
+                  class="bi bi-mailbox">
+              </span>
+              <input id="CEP" type="text" class="form-control" placeholder="80035-030" />
+            </div>
+          </div>
+          <div class="col-3 col-sm-3">
+            <label for="estado" class="form-label">Estado</label>
+            <input id="estado" type="text" class="form-control" placeholder="Paraná" />
+          </div>
+          <div class="col-5 col-sm-5">
+            <label for="cidade" class="form-label">Cidade</label>
+            <div class="input-group">
+              <span class="input-group-text">
+                <img src="../bootstrap-icons/icons/building.svg" alt="building" width="16" height="16"
+                  fill="currentColor" class="bi bi-building">
+              </span>
+              <input id="cidade" type="text" class="form-control" placeholder="Curitiba" />
+            </div>
+          </div>
+        </div>
+        <div class="row g-4 mb-4">
+          <div class="col-4 col-sm-4">
+            <label for="bairro" class="form-label">Bairro</label>
+            <div class="input-group">
+              <span class="input-group-text">
+                <img src="../bootstrap-icons/icons/signpost-split.svg" alt="signpost-split" width="16" height="16"
+                  fill="currentColor" class="bi bi-signpost-split">
+              </span>
+              <input id="bairro" type="text" class="form-control" placeholder="Cabral" />
+            </div>
+          </div>
+          <div class="col-8 col-sm-8">
+            <label for="rua" class="form-label">Rua</label>
+            <input id="rua" type="text" class="form-control" placeholder="R. Dr. Manoel Pedro" />
+          </div>
+        </div>
+        <div class="row g-4 mb-4">
+          <div class="col-4 col-sm-4">
+            <label for="numero" class="form-label">Número</label>
+            <div class="input-group">
+              <span class="input-group-text">Nº</span>
+              <input id="numero-residencia" type="text" class="form-control" placeholder="21" />
+            </div>
+          </div>
+          <div class="col-8 col-sm-8">
+            <label for="string" class="form-label">Complemento</label>
+            <input type="string" class="form-control" id="complemento"
+              placeholder="Ex. restaurante, padaria, praça etc." />
+          </div>
+        </div>
+      </div>
+      <hr class="col-lg-8 mb-4 mx-auto" />
+      <div class="col-lg-8 mb-4 mx-auto">
+        <h4 class="mb-4">Dados Bancários</h4>
+        <div class="row g-4 mb-4">
+          <div class="col-4 col-sm-4">
+            <label for="nome-do-banco" class="form-label">Nome do banco</label>
+            <div class="input-group">
+              <span class="input-group-text">
+                <img src="../bootstrap-icons/icons/bank.svg" alt="bank" width="16" height="16" fill="currentColor"
+                  class="bi bi-bank">
+              </span>
+              <input id="nome-do-banco" type="text" class="form-control" placeholder="Inter" />
+            </div>
+          </div>
+          <div class="col-4 col-sm-4">
+            <label for="numero-do-banco" class="form-label">Número do banco</label>
+            <input id="numero-do-banco" type="text" class="form-control" placeholder="077" />
+          </div>
+          <div class="col-4 col-sm-4">
+            <label for="agencia" class="form-label">Agência</label>
+            <input id="agencia" type="text" class="form-control" placeholder="0001" />
+          </div>
+        </div>
+        <div class="row g-4 mb-4">
+          <div class="col-md-4">
+            <label for="conta-corrente" class="form-label">Conta corrente</label>
+            <div class="input-group">
+              <span class="input-group-text">
+                <img src="../bootstrap-icons/icons/credit-card-2-front.svg" alt="credit-card-2-front" width="16"
+                  height="16" fill="currentColor" class="bi bi-credit-card-2-front">
+              </span>
+              <input id="conta-corrente" type="text" class="form-control" placeholder="1241790-7" />
+            </div>
+          </div>
+          <div class="col-sm-8">
+            <label for="conta" class="form-label">Comprovante Bancário</label>
+            <div class="input-group">
+              <input type="file" class="form-control" id="inputGroupFile03" aria-describedby="inputGroupFileAddon03"
+                aria-label="Upload" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mb-5">
+        <div class="d-grid p-3 col-sm-3 mx-auto">
+          <button class="btn btn-primary" id="submit-button" type="submit">
+            Cadastrar
+          </button>
+        </div>
+      </div>
+    </form>
+  </div>
+  <script src="../bootstrap-5.1.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous">
+  </script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.11/jquery.mask.min.js"></script>
+
+  <script type="text/javascript" src="scripts/mask/maskInput.js"></script>
+  <script type="text/javascript" src="scripts/service/getCEP.js"></script>
+</body>
+
+</html>
